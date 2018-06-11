@@ -25,14 +25,14 @@ body{
  }
  
  .navbar{
-     /* border-radius: 0;
-     background: rgb(77, 79, 81);   */
+     border-radius: 0;
+     background: rgb(77, 79, 81);  
  }
  
  .navbar-brand{
      font-family: 'Cabin', sans-serif;
  }
 
- /* .glyphicon{
+ .glyphicon{
      color: white;
- } */
+ }
