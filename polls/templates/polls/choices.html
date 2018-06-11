@@ -1,0 +1,23 @@
+{% extends 'polls/base.html' %}
+{% block title %}Question Choices{% endblock %}
+{% block body %}
+<div class="container jumbotron">
+    <h1>{{ question.question_text }} </h1>
+
+    {% if error_message %}
+        <p><strong>{{ error_message }}</strong></p>
+    {% endif %}
+
+    <form action="{% url 'polls:selected' question.id %}" method="post" class="list-group">
+        {% csrf_token %}
+        {% for choice in question.choice_set.all %}
+            <input type="radio" id="choice{{ forloop.counter }}" name="choice" value="{{ choice.id }}">
+            <label for="choice{{ forloop.counter }}" class="list-group-item" id="option">
+                {{ choice.choice_text }}
+                <span class="badge"><strong> Votes = </strong> {{ choice.votes }}</span>
+            </label><br>
+        {% endfor %}
+        <input type="submit" value="Vote" >
+    </form>
+</div>
+{% endblock %}

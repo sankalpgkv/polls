@@ -1,0 +1,38 @@
+.container{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background: inherit;
+}
+.icon-bar{
+    color:blue;
+}
+.question{
+    font-size: 3em;
+    color: black;
+}
+
+.list-group-item{
+    width: auto ;
+    text-justify: auto;
+}
+a{
+    color:black;
+    text-decoration: underline;
+}
+body{
+    background: url('images/vine-floral-flourish-growing-on-white-background-hd-resolution_hhcg1hcd__F0000.png');
+    background-size: cover; 
+ }
+ 
+ .navbar{
+     /* border-radius: 0;
+     background: rgb(77, 79, 81);   */
+ }
+ 
+ .navbar-brand{
+     font-family: 'Cabin', sans-serif;
+ }
+
+ /* .glyphicon{
+     color: white;
+ } */
